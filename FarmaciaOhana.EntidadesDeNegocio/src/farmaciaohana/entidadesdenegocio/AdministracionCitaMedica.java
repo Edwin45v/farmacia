@@ -1,6 +1,4 @@
-
 package farmaciaohana.entidadesdenegocio;
-
 
 public class AdministracionCitaMedica {
     private int id;
