@@ -1,4 +1,3 @@
-
 package farmaciaohana.entidadesdenegocio;
 
 import java.time.LocalDate;
@@ -91,5 +90,4 @@ public class AdministracionMedicamentos {
     public void setPrecio(int precio) {
         this.precio = precio;
     }
-      
 }
