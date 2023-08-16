@@ -8,6 +8,6 @@ package farmaciaohana.entidadesdenegocio;
  *
  * @author edwin
  */
-public class InfoMedicamentos {
+public class AdministracionMedicamentos {
     
 }
