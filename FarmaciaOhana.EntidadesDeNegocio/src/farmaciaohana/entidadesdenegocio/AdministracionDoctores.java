@@ -2,24 +2,24 @@
 package farmaciaohana.entidadesdenegocio;
 
 
-public class AdmistracionDoctores {
+public class AdministracionDoctores {
     private int id;
     private String nombre;
     private String apellido;
-    private String especialidda;
+    private String especialidad;
     private String genero;
     private String horario;
     private int top_aux;
     private int hora;
 
-    public AdmistracionDoctores() {
+    public AdministracionDoctores() {
     }
 
-    public AdmistracionDoctores(int id, String nombre, String apellido, String especialidda, String genero, String horario, int top_aux, int hora) {
+    public AdministracionDoctores(int id, String nombre, String apellido, String especialidad, String genero, String horario, int top_aux, int hora) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
-        this.especialidda = especialidda;
+        this.especialidad = especialidad;
         this.genero = genero;
         this.horario = horario;
         this.top_aux = top_aux;
@@ -50,12 +50,12 @@ public class AdmistracionDoctores {
         this.apellido = apellido;
     }
 
-    public String getEspecialidda() {
-        return especialidda;
+    public String getEspecialidad() {
+        return especialidad;
     }
 
-    public void setEspecialidda(String especialidda) {
-        this.especialidda = especialidda;
+    public void setEspecialidad(String especialidad) {
+        this.especialidad = especialidad;
     }
 
     public String getGenero() {

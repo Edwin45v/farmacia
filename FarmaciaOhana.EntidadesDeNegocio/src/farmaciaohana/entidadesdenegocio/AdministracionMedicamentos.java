@@ -10,13 +10,14 @@ public class AdministracionMedicamentos {
     private String existencias;
     private LocalDate fechaVencimiento;
     private String tipoMedicamento;
+    private int top_aux;
     private int precio;
     
 
     public AdministracionMedicamentos() {
     }
 
-    public AdministracionMedicamentos(int id, String nombre, LocalDate fechaAdquisicion, String distribuidora, String existencias, LocalDate fechaVencimiento, String tipoMedicamento, int precio) {
+    public AdministracionMedicamentos(int id, String nombre, LocalDate fechaAdquisicion, String distribuidora, String existencias, LocalDate fechaVencimiento, String tipoMedicamento,int top_aux, int precio) {
         this.id = id;
         this.nombre = nombre;
         this.fechaAdquisicion = fechaAdquisicion;
@@ -24,6 +25,7 @@ public class AdministracionMedicamentos {
         this.existencias = existencias;
         this.fechaVencimiento = fechaVencimiento;
         this.tipoMedicamento = tipoMedicamento;
+        this.top_aux = top_aux;
         this.precio = precio;
     }
 
@@ -90,4 +92,13 @@ public class AdministracionMedicamentos {
     public void setPrecio(int precio) {
         this.precio = precio;
     }
+
+    public int getTop_aux() {
+        return top_aux;
+    }
+
+    public void setTop_aux(int top_aux) {
+        this.top_aux = top_aux;
+    }
+    
 }

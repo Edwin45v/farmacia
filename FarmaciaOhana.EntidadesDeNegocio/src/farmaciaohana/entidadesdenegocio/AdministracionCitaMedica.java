@@ -4,12 +4,12 @@ public class AdministracionCitaMedica {
     private int id;
     private int idCitaMedica;
     private int top_aux;
-    private int estado;
+    private String estado;
 
     public AdministracionCitaMedica() {
     }
 
-    public AdministracionCitaMedica(int id, int idCitaMedica, int top_aux, int estado) {
+    public AdministracionCitaMedica(int id, int idCitaMedica, int top_aux, String estado) {
         this.id = id;
         this.idCitaMedica = idCitaMedica;
         this.top_aux = top_aux;
@@ -40,11 +40,11 @@ public class AdministracionCitaMedica {
         this.top_aux = top_aux;
     }
 
-    public int getEstado() {
+    public String getEstado() {
         return estado;
     }
 
-    public void setEstado(int estado) {
+    public void setEstado(String estado) {
         this.estado = estado;
     }
     
