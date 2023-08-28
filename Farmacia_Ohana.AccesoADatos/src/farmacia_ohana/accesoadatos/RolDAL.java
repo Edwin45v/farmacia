@@ -5,9 +5,8 @@ import java.util.*;
 import java.sql.*;
 import farmaciaohana.entidadesdenegocio.*;
 
-
 public class RolDAL {
-        static String obtenerCampos() {
+    static String obtenerCampos() {
         return "r.Id, r.Nombre";
     }
     
