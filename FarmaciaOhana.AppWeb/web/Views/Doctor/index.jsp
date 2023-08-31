@@ -1,10 +1,7 @@
-<%-- 
-    Document   : index
-    Created on : 26 ago 2023, 16:56:58
-    Author     : MINEDUCYT
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="farmaciaohana.entidadesdenegocio.Doctor"%>
+<%@page import="java.util.ArrayList"%>
+<%ArrayList<Cita> doctores = (ArrayList<doctor>) request.getAttribute("doctores");%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,6 +9,25 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>Doctores!</h1>
+        <table class="m2 z-depth striped higlight centered responsive-table">
+            <thead>
+                <tr>
+                    <th>IdAdministracionCitasMedicass</th>
+                    <th>Fecha</th>
+                    <th>Hora</th>
+                </tr>
+            </thead>
+            <tbody>
+                <%for(Doctor Doctor: Doctores){
+                %>
+                <tr>
+                    <td><%=doctor.getIdAdministracionCitasMedicas() %><td>
+                    <td><%=doctor.getFecha()%><td>
+                    <td><%=doctor.getHora()%><td>
+                </tr>
+                <%}%>
+            </tbody>
+        </table>
     </body>
 </html>

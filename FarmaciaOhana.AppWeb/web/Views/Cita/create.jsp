@@ -1,17 +1,17 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="farmaciaohana.entidadesdenegocio.Farmacia"%>
+<%@page import="farmaciaohana.entidadesdenegocio.Cita"%>
 
 <!DOCTYPE html>
 <html>
     <head>
         <jsp:include page="/Views/Shared/title.jsp" />
-        <title>Crear Farmacia</title>
+        <title>Crear Cita</title>
     </head>
     <body>
         <jsp:include page="/Views/Shared/headerBody.jsp" />  
         <main class="container">   
-            <h5>Crear Farmacia</h5>
-            <form action="Farmacia" method="post" onsubmit="return  validarFormulario()">
+            <h5>Crear Cita</h5>
+            <form action="cita" method="post" onsubmit="return  validarFormulario()">
                 <input type="hidden" name="accion" value="<%=request.getAttribute("accion")%>">                
                 <div class="row">
                     <div class="input-field col l4 s12">

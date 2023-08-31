@@ -4,13 +4,13 @@
 <%@page import="farmaciaohana.accesoadatos.RolDAL"%>
 <%@page import="java.util.ArrayList"%>
 
-<% ArrayList<Rol> roles = RolDAL.obtenerTodos();
+<% ArrayList<Rol> citas = RolDAL.obtenerTodos();
     int id = Integer.parseInt(request.getParameter("id"));
 %>
-<select id="slRol" name="idRol">
+<select id="slCitas" name="idRol">
     <option <%=(id == 0) ? "selected" : ""%>  value="0">SELECCIONAR</option>
-    <% for (Rol rol : roles) {%>
-    <option <%=(id == rol.getId()) ? "selected" : ""%>  value="<%=rol.getId()%>"><%= rol.getNombre()%></option>
+    <% for (Rol citas : citas) {%>
+    <option <%=(id == Citas.getId()) ? "selected" : ""%>  value="<%=rol.getId()%>"><%= rol.getNombre()%></option>
     <%}%>
 </select>
-<label for="idRol">Rol</label>
+<label for="idCitas">Citas</label>

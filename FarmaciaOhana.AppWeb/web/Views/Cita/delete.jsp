@@ -1,40 +1,40 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="farmaciaohana.entidadesdenegocio.Farmacia"%>
-<% Farmacia farmacia = (farmacia) request.getAttribute("farmacia");%>
+<%@page import="farmaciaohana.entidadesdenegocio.cita"%>
+<% cita cita = (cita) request.getAttribute("cita");%>
 
 <!DOCTYPE html>
 <html>
     <head>
         <jsp:include page="/Views/Shared/title.jsp" />
-        <title>Eliminar Farmacia</title>
+        <title>Eliminar Cita</title>
     </head>
     <body>
         <jsp:include page="/Views/Shared/headerBody.jsp" />  
         <main class="container">   
-            <h5>Eliminar Empresa</h5>
+            <h5>Eliminar Cita</h5>
             <form action="Empresa" method="post">  
                 <input type="hidden" name="accion" value="<%=request.getAttribute("accion")%>"> 
-                <input type="hidden" name="id" value="<%=farmacia.getId()%>">  
+                <input type="hidden" name="id" value="<%=cita.getId()%>">  
                 <div class="row">
                     <div class="input-field col l4 s12">
-                        <input  id="txtNombre" type="text" value="<%=farmacia.getNombre()%>" disabled>
+                        <input  id="txtNombre" type="text" value="<%=cita.getNombre()%>" disabled>
                         <label for="txtNombre">Nombre</label>
                     </div>                       
                     <div class="input-field col l4 s12">
-                        <input  id="txtRubro" type="text" value="<%=farmacia.getRubro()%>" disabled>
+                        <input  id="txtRubro" type="text" value="<%=cita.getRubro()%>" disabled>
                         <label for="txtRubro">Rubro</label>
                     </div> 
                     <div class="input-field col l4 s12">
-                        <input  id="txtCategoria" type="text" value="<%=farmacia.getCategoria()%>" disabled>
+                        <input  id="txtCategoria" type="text" value="<%=cita.getCategoria()%>" disabled>
                         <label for="txtCategoria">Categoria</label>
                     </div>      
                     <div class="input-field col l4 s12">
-                        <input  id="txtDepartamento" type="text" value="<%=farmacia.getDepartamento()%>" disabled>
+                        <input  id="txtDepartamento" type="text" value="<%=cita.getDepartamento()%>" disabled>
                         <label for="txtDepartamento">Departamento</label>
                     </div>
                     <div class="input-field col l4 s12">
-                        <input id="txtContacto" type="text" value="<%=farmacia.getContacto().getNombre()%>" disabled>
+                        <input id="txtContacto" type="text" value="<%=cita.getContacto().getNombre()%>" disabled>
                         <label for="txtContacto">Contacto</label>
                     </div> 
                 </div>
